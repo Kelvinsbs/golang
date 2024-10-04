@@ -1,0 +1,5 @@
+go run {nome_arquivo} // executar o arquivo
+go mod init {nome_modulo} // criar um modulo
+go build // para criar o build
+./{nomeBinario} // para executar o binario
+go install // mesma coisa que o build, porem o binario vai ficar na raiz do projeto
