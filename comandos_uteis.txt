@@ -3,3 +3,6 @@ go mod init {nome_modulo} // criar um modulo
 go build // para criar o build
 ./{nomeBinario} // para executar o binario
 go install // mesma coisa que o build, porem o binario vai ficar na raiz do projeto
+go get {link_pacote} // dentro da pasta de um pacote rode este comando para pegar pacotes externos
+Sempre utilizar o ultimo nome depois da ultima barra (dos imports) para referenciar o pacote a ser utilizado
+go mod tidy // remove todas as dependencias que não estão sendo usadas
