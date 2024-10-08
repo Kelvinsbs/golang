@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func main() {
 	// NUMEROS INTEIROS
@@ -42,5 +45,27 @@ func main() {
 
 	str2 := "dolor sit amet"
 	fmt.Println(str2)
+
+	// se colocar um caractere entre aspas simples """seria o equivalente ao char""" ele vai pegar a posicao desse caractere na tabela ASCII
+	char := 'B'
+	fmt.Println(char)
 	// STRING FIM
+
+	var texto int16 // valor inicial do int vai ser 0 e da string vai ser ""
+	fmt.Println(texto)
+
+	// BOOLEAN
+	var booleano1 bool = true //true ou false
+	fmt.Println(booleano1)
+
+	var booleano2 bool //valor inicial do tipo bool e sempre false
+	// var booleano2 bool = false // isso aqui é a mesma coisa que a linha de cima
+	fmt.Println(booleano2)
+	// BOOLEAN FIM
+
+	// ERROR
+	var erro error = errors.New("Erro interno")
+	fmt.Println(erro)
+	// ERROR FIM
+
 }
