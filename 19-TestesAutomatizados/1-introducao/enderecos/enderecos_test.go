@@ -1,4 +1,4 @@
-package enderecos
+package enderecos_test //unica forma de ter mais de um pacote
 
 import "testing"
 
@@ -8,7 +8,7 @@ type cenarioDeTeste struct {
 }
 
 func TestTipoDeEndereco(t *testing.T) {
-
+	t.Parallel() // nao e obrigatorio
 	cenariosDeTeste := []cenarioDeTeste{
 		{"Rua ABC", "Rua"},
 		{"Rodovia joão gualberto soares", "Rodovia"},
@@ -26,6 +26,14 @@ func TestTipoDeEndereco(t *testing.T) {
 			t.Errorf("O tipo recebido %s é diferente do esperado %s",
 				retornoRecebido, cenario.retornoEsperado)
 		}
+	}
+}
+
+func TestQualquer(t *testing.T) {
+	t.Parallel() // nao e obrigatorio
+
+	if 1 > 2 {
+		t.Errorf("Teste Quebrou!")
 	}
 }
 

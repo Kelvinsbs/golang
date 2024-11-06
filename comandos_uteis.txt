@@ -6,3 +6,8 @@ go install // mesma coisa que o build, porem o binario vai ficar na raiz do proj
 go get {link_pacote} // dentro da pasta de um pacote rode este comando para pegar pacotes externos
 Sempre utilizar o ultimo nome depois da ultima barra (dos imports) para referenciar o pacote a ser utilizado
 go mod tidy // remove todas as dependencias que não estão sendo usadas
+go test ./... // testar todos os testes do projeto
+go test -v // verbose (traz com mais detalhes)
+go test --coverprofile {nome_arquivo.txt} // cria um arquivo com o resultado do teste
+go tool cover --func={nome_arquivo.txt} // traz o resultado detalhado e as funcoes de cada arquivo
+go tool cover --html=cobertura.txt // gera um arquivo html com oq nao foi coberto no teste
