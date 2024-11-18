@@ -11,3 +11,4 @@ go test -v // verbose (traz com mais detalhes)
 go test --coverprofile {nome_arquivo.txt} // cria um arquivo com o resultado do teste
 go tool cover --func={nome_arquivo.txt} // traz o resultado detalhado e as funcoes de cada arquivo
 go tool cover --html=cobertura.txt // gera um arquivo html com oq nao foi coberto no teste
+// quando o html tiver recebendo uma variavel/struct só, pode passar apenas ".Campo"
